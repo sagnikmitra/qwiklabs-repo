@@ -105,10 +105,10 @@ const Layout = ({ children, currentPage, setCurrentPage }: LayoutProps) => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-center md:text-left mb-4 md:mb-0">
               <p className="text-sm text-gray-600">
-                Deadline of the Program: June 10th, 2025, 11:59 PM
+                Deadline of the Program: June 10th, 2021, 11:59 PM
               </p>
               <p className="text-sm text-gray-600 mt-1">
-                This is a personal project and is not endorsed by Google LLC.
+                This is a personal project by Sagnik Mitra and is not endorsed by Google LLC.
               </p>
             </div>
             <div className="flex space-x-4">
