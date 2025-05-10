@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased text-gray-900;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6 transition duration-200 hover:shadow-lg;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-400;
+  }
+
+  .btn-success {
+    @apply btn bg-success-500 text-white hover:bg-success-600 focus:ring-success-400;
+  }
+
+  .btn-warning {
+    @apply btn bg-warning-500 text-white hover:bg-warning-600 focus:ring-warning-400;
+  }
+
+  .btn-accent {
+    @apply btn bg-accent-600 text-white hover:bg-accent-700 focus:ring-accent-500;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+
+  .heading-1 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+
+  .heading-2 {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+
+  .heading-3 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  .slide-up {
+    @apply animate-slide-up;
+  }
+
+  .milestone-badge {
+    @apply flex items-center justify-center w-16 h-16 rounded-full text-white font-bold text-xl;
+  }
+
+  .milestone-1 {
+    @apply bg-primary-500;
+  }
+
+  .milestone-2 {
+    @apply bg-warning-500;
+  }
+
+  .milestone-3 {
+    @apply bg-accent-600;
+  }
+
+  .milestone-4 {
+    @apply bg-success-500;
+  }
+
+  .milestone-0 {
+    @apply bg-gray-400;
+  }
+}
